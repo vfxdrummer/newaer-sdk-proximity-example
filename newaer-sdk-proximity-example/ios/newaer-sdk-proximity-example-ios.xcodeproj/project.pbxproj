@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184F7A3E176FE1C100AD5E58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F7A38176FE1C100AD5E58 /* AppDelegate.m */; };
+		184F7A3F176FE1C100AD5E58 /* DeviceTableCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F7A3A176FE1C100AD5E58 /* DeviceTableCustomCell.m */; };
+		184F7A40176FE1C100AD5E58 /* DeviceTableCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A3B176FE1C100AD5E58 /* DeviceTableCustomCell.xib */; };
+		184F7A41176FE1C100AD5E58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F7A3D176FE1C100AD5E58 /* ViewController.m */; };
+		184F7A4D176FE1D300AD5E58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A42176FE1D300AD5E58 /* Default-568h@2x.png */; };
+		184F7A4E176FE1D300AD5E58 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A43176FE1D300AD5E58 /* Default.png */; };
+		184F7A4F176FE1D300AD5E58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A44176FE1D300AD5E58 /* Default@2x.png */; };
+		184F7A50176FE1D300AD5E58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A46176FE1D300AD5E58 /* InfoPlist.strings */; };
+		184F7A51176FE1D300AD5E58 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A48176FE1D300AD5E58 /* MainStoryboard_iPad.storyboard */; };
+		184F7A52176FE1D300AD5E58 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F7A4A176FE1D300AD5E58 /* MainStoryboard_iPhone.storyboard */; };
+		184F7A53176FE1D300AD5E58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F7A4C176FE1D300AD5E58 /* main.m */; };
+		185FEA5B179E5AC000FB14AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FEA5A179E5AC000FB14AB /* Security.framework */; };
+		185FEA68179E5AFB00FB14AB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FEA67179E5AFB00FB14AB /* CFNetwork.framework */; };
+		1894532119A2CF39003EB13F /* MainStoryboard_iPhone35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1894531F19A2CF39003EB13F /* MainStoryboard_iPhone35.storyboard */; };
+		18AA152D16CC73800015DCBE /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA152C16CC73800015DCBE /* CoreBluetooth.framework */; };
+		18BAC60316B9FD3900E3A7BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BAC60216B9FD3900E3A7BD /* CoreLocation.framework */; };
+		18BBCCA118452C3900AB89D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BBCCA018452C3900AB89D7 /* Images.xcassets */; };
+		18C286B216B9E1CD00E7A0E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C286B116B9E1CD00E7A0E5 /* SystemConfiguration.framework */; };
+		18D13F8B16B7460100B3BA46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D13F8A16B7460100B3BA46 /* UIKit.framework */; };
+		18D13F8D16B7460100B3BA46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D13F8C16B7460100B3BA46 /* Foundation.framework */; };
+		18D93A3216EEB1FE007340E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D93A3116EEB1FE007340E1 /* MobileCoreServices.framework */; };
+		18F0408718D79C6A006828E6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F0408618D79C6A006828E6 /* libz.dylib */; };
+		18F9CB6D195E4438006AF051 /* libnewaer-sdk-proximity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 187384C3195E3FDF0028567B /* libnewaer-sdk-proximity.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187384C2195E3FDF0028567B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 182599C017ED4EAA00238ECC;
+			remoteInfo = "newaer-sdk-proximity";
+		};
+		187384C4195E3FDF0028567B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 188A2CDF17EE2442003AC62A;
+			remoteInfo = utests;
+		};
+		187384C8195E3FDF0028567B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1807778018E60631008A77BE;
+			remoteInfo = intest;
+		};
+		187384CA195E3FDF0028567B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18BD7E8C194F8F16002614A0;
+			remoteInfo = utestsDeviceManager;
+		};
+		187384CC195E3FDF0028567B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18E34C3C1951279900B807E2;
+			remoteInfo = utestsHandlerNewAer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184F7A37176FE1C100AD5E58 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		184F7A38176FE1C100AD5E58 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		184F7A39176FE1C100AD5E58 /* DeviceTableCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceTableCustomCell.h; path = src/DeviceTableCustomCell.h; sourceTree = SOURCE_ROOT; };
+		184F7A3A176FE1C100AD5E58 /* DeviceTableCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceTableCustomCell.m; path = src/DeviceTableCustomCell.m; sourceTree = SOURCE_ROOT; };
+		184F7A3B176FE1C100AD5E58 /* DeviceTableCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeviceTableCustomCell.xib; path = src/DeviceTableCustomCell.xib; sourceTree = SOURCE_ROOT; };
+		184F7A3C176FE1C100AD5E58 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = src/ViewController.h; sourceTree = SOURCE_ROOT; };
+		184F7A3D176FE1C100AD5E58 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ViewController.m; path = src/ViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		184F7A42176FE1D300AD5E58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "src/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		184F7A43176FE1D300AD5E58 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = src/Default.png; sourceTree = SOURCE_ROOT; };
+		184F7A44176FE1D300AD5E58 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "src/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		184F7A47176FE1D300AD5E58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F7A49176FE1D300AD5E58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		184F7A4B176FE1D300AD5E58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		184F7A4C176FE1D300AD5E58 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
+		184F7A54176FE20000AD5E58 /* newaer-sdk-proximity-example-ios-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "newaer-sdk-proximity-example-ios-Info.plist"; path = "src/newaer-sdk-proximity-example-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
+		184F7A55176FE20000AD5E58 /* newaer-sdk-proximity-example-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "newaer-sdk-proximity-example-ios-Prefix.pch"; path = "src/newaer-sdk-proximity-example-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		185FEA5A179E5AC000FB14AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		185FEA67179E5AFB00FB14AB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "newaer-sdk-proximity.xcodeproj"; path = "../../newaer-sdk-proximity/ios/newaer-sdk-proximity.xcodeproj"; sourceTree = "<group>"; };
+		1894532019A2CF39003EB13F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPhone35.storyboard; sourceTree = "<group>"; };
+		18AA152C16CC73800015DCBE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		18BAC60216B9FD3900E3A7BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18BBCCA018452C3900AB89D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "newaer-sdk-proximity-example-ios/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		18C286B116B9E1CD00E7A0E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18D13F8616B7460100B3BA46 /* newaer-sdk-proximity-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "newaer-sdk-proximity-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D13F8A16B7460100B3BA46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18D13F8C16B7460100B3BA46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18D13F8E16B7460100B3BA46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18D93A3116EEB1FE007340E1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18F0408618D79C6A006828E6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D13F8316B7460100B3BA46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F9CB6D195E4438006AF051 /* libnewaer-sdk-proximity.a in Frameworks */,
+				18F0408718D79C6A006828E6 /* libz.dylib in Frameworks */,
+				185FEA68179E5AFB00FB14AB /* CFNetwork.framework in Frameworks */,
+				185FEA5B179E5AC000FB14AB /* Security.framework in Frameworks */,
+				18D93A3216EEB1FE007340E1 /* MobileCoreServices.framework in Frameworks */,
+				18AA152D16CC73800015DCBE /* CoreBluetooth.framework in Frameworks */,
+				18BAC60316B9FD3900E3A7BD /* CoreLocation.framework in Frameworks */,
+				18C286B216B9E1CD00E7A0E5 /* SystemConfiguration.framework in Frameworks */,
+				18D13F8B16B7460100B3BA46 /* UIKit.framework in Frameworks */,
+				18D13F8D16B7460100B3BA46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184F7A45176FE1D300AD5E58 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1894531F19A2CF39003EB13F /* MainStoryboard_iPhone35.storyboard */,
+				184F7A48176FE1D300AD5E58 /* MainStoryboard_iPad.storyboard */,
+				184F7A4A176FE1D300AD5E58 /* MainStoryboard_iPhone.storyboard */,
+				184F7A46176FE1D300AD5E58 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = src/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		187384B9195E3FDF0028567B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187384C3195E3FDF0028567B /* libnewaer-sdk-proximity.a */,
+				187384C5195E3FDF0028567B /* utests.xctest */,
+				187384C9195E3FDF0028567B /* intest.app */,
+				187384CB195E3FDF0028567B /* utestsDeviceManager.xctest */,
+				187384CD195E3FDF0028567B /* utestsHandlerNewAer.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D13F7B16B7460100B3BA46 = {
+			isa = PBXGroup;
+			children = (
+				18D13F9016B7460100B3BA46 /* newaer-sdk-proximity-example-ios */,
+				18D13F8916B7460100B3BA46 /* Frameworks */,
+				18D13F8716B7460100B3BA46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18D13F8716B7460100B3BA46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D13F8616B7460100B3BA46 /* newaer-sdk-proximity-example-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D13F8916B7460100B3BA46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */,
+				18F0408618D79C6A006828E6 /* libz.dylib */,
+				18D93A3116EEB1FE007340E1 /* MobileCoreServices.framework */,
+				18AA152C16CC73800015DCBE /* CoreBluetooth.framework */,
+				18BAC60216B9FD3900E3A7BD /* CoreLocation.framework */,
+				18C286B116B9E1CD00E7A0E5 /* SystemConfiguration.framework */,
+				18D13F8A16B7460100B3BA46 /* UIKit.framework */,
+				18D13F8C16B7460100B3BA46 /* Foundation.framework */,
+				18D13F8E16B7460100B3BA46 /* CoreGraphics.framework */,
+				185FEA67179E5AFB00FB14AB /* CFNetwork.framework */,
+				185FEA5A179E5AC000FB14AB /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18D13F9016B7460100B3BA46 /* newaer-sdk-proximity-example-ios */ = {
+			isa = PBXGroup;
+			children = (
+				184F7A37176FE1C100AD5E58 /* AppDelegate.h */,
+				184F7A38176FE1C100AD5E58 /* AppDelegate.m */,
+				184F7A39176FE1C100AD5E58 /* DeviceTableCustomCell.h */,
+				184F7A3A176FE1C100AD5E58 /* DeviceTableCustomCell.m */,
+				184F7A3B176FE1C100AD5E58 /* DeviceTableCustomCell.xib */,
+				184F7A3C176FE1C100AD5E58 /* ViewController.h */,
+				184F7A3D176FE1C100AD5E58 /* ViewController.m */,
+				18BBCCA018452C3900AB89D7 /* Images.xcassets */,
+				18D13F9116B7460100B3BA46 /* Supporting Files */,
+			);
+			name = "newaer-sdk-proximity-example-ios";
+			path = "newaer-sdk-example";
+			sourceTree = "<group>";
+		};
+		18D13F9116B7460100B3BA46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				184F7A54176FE20000AD5E58 /* newaer-sdk-proximity-example-ios-Info.plist */,
+				184F7A55176FE20000AD5E58 /* newaer-sdk-proximity-example-ios-Prefix.pch */,
+				184F7A42176FE1D300AD5E58 /* Default-568h@2x.png */,
+				184F7A43176FE1D300AD5E58 /* Default.png */,
+				184F7A44176FE1D300AD5E58 /* Default@2x.png */,
+				184F7A45176FE1D300AD5E58 /* en.lproj */,
+				184F7A4C176FE1D300AD5E58 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D13F8516B7460100B3BA46 /* newaer-sdk-proximity-example-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D13FAD16B7460100B3BA46 /* Build configuration list for PBXNativeTarget "newaer-sdk-proximity-example-ios" */;
+			buildPhases = (
+				18D13F8216B7460100B3BA46 /* Sources */,
+				18D13F8316B7460100B3BA46 /* Frameworks */,
+				18D13F8416B7460100B3BA46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "newaer-sdk-proximity-example-ios";
+			productName = "newaer-sdk-example";
+			productReference = 18D13F8616B7460100B3BA46 /* newaer-sdk-proximity-example-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D13F7D16B7460100B3BA46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = NewAer;
+				TargetAttributes = {
+					18D13F8516B7460100B3BA46 = {
+						DevelopmentTeam = BRER3BYXQE;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 18D13F8016B7460100B3BA46 /* Build configuration list for PBXProject "newaer-sdk-proximity-example-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18D13F7B16B7460100B3BA46;
+			productRefGroup = 18D13F8716B7460100B3BA46 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 187384B9195E3FDF0028567B /* Products */;
+					ProjectRef = 187384B8195E3FDF0028567B /* newaer-sdk-proximity.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				18D13F8516B7460100B3BA46 /* newaer-sdk-proximity-example-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		187384C3195E3FDF0028567B /* libnewaer-sdk-proximity.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libnewaer-sdk-proximity.a";
+			remoteRef = 187384C2195E3FDF0028567B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		187384C5195E3FDF0028567B /* utests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = utests.xctest;
+			remoteRef = 187384C4195E3FDF0028567B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		187384C9195E3FDF0028567B /* intest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = intest.app;
+			remoteRef = 187384C8195E3FDF0028567B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		187384CB195E3FDF0028567B /* utestsDeviceManager.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = utestsDeviceManager.xctest;
+			remoteRef = 187384CA195E3FDF0028567B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		187384CD195E3FDF0028567B /* utestsHandlerNewAer.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = utestsHandlerNewAer.xctest;
+			remoteRef = 187384CC195E3FDF0028567B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D13F8416B7460100B3BA46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184F7A40176FE1C100AD5E58 /* DeviceTableCustomCell.xib in Resources */,
+				18BBCCA118452C3900AB89D7 /* Images.xcassets in Resources */,
+				184F7A4D176FE1D300AD5E58 /* Default-568h@2x.png in Resources */,
+				184F7A4E176FE1D300AD5E58 /* Default.png in Resources */,
+				184F7A4F176FE1D300AD5E58 /* Default@2x.png in Resources */,
+				1894532119A2CF39003EB13F /* MainStoryboard_iPhone35.storyboard in Resources */,
+				184F7A50176FE1D300AD5E58 /* InfoPlist.strings in Resources */,
+				184F7A51176FE1D300AD5E58 /* MainStoryboard_iPad.storyboard in Resources */,
+				184F7A52176FE1D300AD5E58 /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D13F8216B7460100B3BA46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184F7A3E176FE1C100AD5E58 /* AppDelegate.m in Sources */,
+				184F7A3F176FE1C100AD5E58 /* DeviceTableCustomCell.m in Sources */,
+				184F7A41176FE1C100AD5E58 /* ViewController.m in Sources */,
+				184F7A53176FE1D300AD5E58 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		184F7A46176FE1D300AD5E58 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F7A47176FE1D300AD5E58 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F7A48176FE1D300AD5E58 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F7A49176FE1D300AD5E58 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		184F7A4A176FE1D300AD5E58 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F7A4B176FE1D300AD5E58 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1894531F19A2CF39003EB13F /* MainStoryboard_iPhone35.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1894532019A2CF39003EB13F /* en */,
+			);
+			name = MainStoryboard_iPhone35.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D13FAB16B7460100B3BA46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "9271c766-cb75-47a8-a01e-4f40f41f5db3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D13FAC16B7460100B3BA46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "9271c766-cb75-47a8-a01e-4f40f41f5db3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9271c766-cb75-47a8-a01e-4f40f41f5db3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D13FAE16B7460100B3BA46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/newaer-sdk-proximity-example-ios-Prefix.pch";
+				INFOPLIST_FILE = "src/newaer-sdk-proximity-example-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../newaer-sdk-proximity/ios/build/Release",
+					"\"$(SRCROOT)/src/3rd Party/TestFlightSDK3.0.0\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9271c766-cb75-47a8-a01e-4f40f41f5db3";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../newaer-sdk-proximity/ios/build/Release/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18D13FAF16B7460100B3BA46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/newaer-sdk-proximity-example-ios-Prefix.pch";
+				INFOPLIST_FILE = "src/newaer-sdk-proximity-example-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../newaer-sdk-proximity/ios/build/Release",
+					"\"$(SRCROOT)/src/3rd Party/TestFlightSDK3.0.0\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9271c766-cb75-47a8-a01e-4f40f41f5db3";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../newaer-sdk-proximity/ios/build/Release/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D13F8016B7460100B3BA46 /* Build configuration list for PBXProject "newaer-sdk-proximity-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D13FAB16B7460100B3BA46 /* Debug */,
+				18D13FAC16B7460100B3BA46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D13FAD16B7460100B3BA46 /* Build configuration list for PBXNativeTarget "newaer-sdk-proximity-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D13FAE16B7460100B3BA46 /* Debug */,
+				18D13FAF16B7460100B3BA46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D13F7D16B7460100B3BA46 /* Project object */;
+}

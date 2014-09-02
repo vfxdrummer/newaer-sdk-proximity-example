@@ -1,0 +1,1116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NAPlatform Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">NewAer SDK </a></h1>
+				<a id="developerHome" href="../index.html">NewAer</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NAPlatform Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/initializeWithApplicationId:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithApplicationId:delegate:</option>
+	
+	<option value="//api/name/setLogLevel:classes:logger:">&nbsp;&nbsp;&nbsp;&nbsp;+ setLogLevel:classes:logger:</option>
+	
+	<option value="//api/name/sharedNAPlatform">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedNAPlatform</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getMyDeviceId">&nbsp;&nbsp;&nbsp;&nbsp;- getMyDeviceId</option>
+	
+	<option value="//api/name/registerBeaconIds:">&nbsp;&nbsp;&nbsp;&nbsp;- registerBeaconIds:</option>
+	
+	<option value="//api/name/registerFriendApplicationIds:">&nbsp;&nbsp;&nbsp;&nbsp;- registerFriendApplicationIds:</option>
+	
+	<option value="//api/name/releaseDevice:">&nbsp;&nbsp;&nbsp;&nbsp;- releaseDevice:</option>
+	
+	<option value="//api/name/sendMessage:to:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessage:to:</option>
+	
+	<option value="//api/name/startAdvertisingWithDeviceTypes:name:">&nbsp;&nbsp;&nbsp;&nbsp;- startAdvertisingWithDeviceTypes:name:</option>
+	
+	<option value="//api/name/startScanWithDeviceTypes:">&nbsp;&nbsp;&nbsp;&nbsp;- startScanWithDeviceTypes:</option>
+	
+	<option value="//api/name/stopAdvertisingWithDeviceTypes:">&nbsp;&nbsp;&nbsp;&nbsp;- stopAdvertisingWithDeviceTypes:</option>
+	
+	<option value="//api/name/stopScanWithDeviceTypes:">&nbsp;&nbsp;&nbsp;&nbsp;- stopScanWithDeviceTypes:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scanning">Scanning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Advertising">Advertising</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Messaging">Messaging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Platform information">Platform information</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithApplicationId:delegate:">initializeWithApplicationId:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLogLevel:classes:logger:">setLogLevel:classes:logger:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedNAPlatform">sharedNAPlatform</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getMyDeviceId">getMyDeviceId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerBeaconIds:">registerBeaconIds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerFriendApplicationIds:">registerFriendApplicationIds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/releaseDevice:">releaseDevice:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessage:to:">sendMessage:to:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAdvertisingWithDeviceTypes:name:">startAdvertisingWithDeviceTypes:name:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startScanWithDeviceTypes:">startScanWithDeviceTypes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAdvertisingWithDeviceTypes:">stopAdvertisingWithDeviceTypes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopScanWithDeviceTypes:">stopScanWithDeviceTypes:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NAPlatform Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NAPlatform Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NAPlatform.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>NAPlatform is the main class for the NewAer Proximity Platform.  It provides methods for starting and stopping scanning, and starting and stopping advertising.  NAPlatform is intended to be used as a singleton.  You must first initialized the platform before you can access the singleton.  Use <a href="#//api/name/initializeWithApplicationId:delegate:">[NAPlatform initializeWithApplicationId:delegate:]</a> and then <a href="#//api/name/sharedNAPlatform">[NAPlatform sharedNAPlatform]</a>.</p>
+
+<p>Applications can register a <a href="#//api/name/delegate">delegate</a> to receive notifications of when a device is found or lost, or if its health changes.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Assign a delegate to receive <a href="../Protocols/NAPlatformDelegate.html">NAPlatformDelegate</a> messages.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLogLevel:classes:logger:">+&nbsp;setLogLevel:classes:logger:</a></code>
+		<span class="tooltip"><p>Set logging level for the SDK and provide a callback function to receive log messages NALOGLEVEL_DEBUG is only available in debug builds of the SDK.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithApplicationId:delegate:">+&nbsp;initializeWithApplicationId:delegate:</a></code>
+		<span class="tooltip"><p>Initialize NAPlatform with your developer application ID and delegate.  You must initialize the platform before you can access <a href="#//api/name/sharedNAPlatform">[NAPlatform sharedNAPlatform]</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedNAPlatform">+&nbsp;sharedNAPlatform</a></code>
+		<span class="tooltip"><p>NAPlatform is a singleton and this is the only way to access the instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerFriendApplicationIds:">&ndash;&nbsp;registerFriendApplicationIds:</a></code>
+		<span class="tooltip"><p>Register additional application IDs that this application is compatible with.  Some features of the SDK use the application ID to scan for other devices and services.  Register additional application IDs before you begin scanning to ensure that you will detect devices advertising with those IDs.  If you only need to scan for devices matching your registered application ID, you don&rsquo;t need to call this function.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerBeaconIds:">&ndash;&nbsp;registerBeaconIds:</a></code>
+		<span class="tooltip"><p>Register iBeacon IDs that this application is compatible with. Register additional iBeacon IDs before you begin scanning to ensure that you will detect devices with those IDs.  If you only need to scan for devices matching your registered application ID, you don&rsquo;t need to call this function.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Scanning" name="task_Scanning"></a>
+						<h3 class="subsubtitle task-title">Scanning</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startScanWithDeviceTypes:">&ndash;&nbsp;startScanWithDeviceTypes:</a></code>
+		<span class="tooltip"><p>Starts scanning for a specific scan family.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopScanWithDeviceTypes:">&ndash;&nbsp;stopScanWithDeviceTypes:</a></code>
+		<span class="tooltip"><p>Stops scanning for specific device types.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Advertising" name="task_Advertising"></a>
+						<h3 class="subsubtitle task-title">Advertising</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startAdvertisingWithDeviceTypes:name:">&ndash;&nbsp;startAdvertisingWithDeviceTypes:name:</a></code>
+		<span class="tooltip"><p>Start advertising for the specified device types.  The only scan type that currently supports advertising is NASCAN_NEWAER.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopAdvertisingWithDeviceTypes:">&ndash;&nbsp;stopAdvertisingWithDeviceTypes:</a></code>
+		<span class="tooltip"><p>Stops advertising for specific device types.
+The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidStopAdvertise:">[NAPlatformDelegate platformDidStopAdvertise:]</a> <a href="#//api/name/delegate">delegate</a> will be called if the advertise was stopped successfully.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Messaging" name="task_Messaging"></a>
+						<h3 class="subsubtitle task-title">Messaging</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessage:to:">&ndash;&nbsp;sendMessage:to:</a></code>
+		<span class="tooltip"><p>Queues a message to be sent to a device ID.  The device ID need not be visible currently and may come into range in the future.  The message send request does not timeout and only one message may be queued at a time.  Calling this method a second time overwrites the first message.  Only peer devices of scan type NASCAN_NEWAER can receive messages. When you stop scanning, all queued messages are discarded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/releaseDevice:">&ndash;&nbsp;releaseDevice:</a></code>
+		<span class="tooltip"><p>Releases a device identified by deviceId from the scanning cache.  Use this to get new peer info on the next scan.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Platform information" name="task_Platform information"></a>
+						<h3 class="subsubtitle task-title">Platform information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getMyDeviceId">&ndash;&nbsp;getMyDeviceId</a></code>
+		<span class="tooltip"><p>Gets the deviceId for this device for the corresponding NADeviceType</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Assign a delegate to receive <a href="../Protocols/NAPlatformDelegate.html">NAPlatformDelegate</a> messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign) NSObject&lt;NAPlatformDelegate&gt; *delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithApplicationId:delegate:" title="initializeWithApplicationId:delegate:"></a>
+	<h3 class="subsubtitle method-title">initializeWithApplicationId:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize NAPlatform with your developer application ID and delegate.  You must initialize the platform before you can access <a href="#//api/name/sharedNAPlatform">[NAPlatform sharedNAPlatform]</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)initializeWithApplicationId:(NSString *)<em>applicationId</em> delegate:(NSObject&lt;NAPlatformDelegate&gt; *)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>applicationId</em></dt>
+			<dd><p>A string containing your NewAer application ID</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The <a href="#//api/name/delegate">delegate</a> that implements the <a href="../Protocols/NAPlatformDelegate.html">NAPlatformDelegate</a> protocol</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You will not be able to access functions of NAPlatform until you have set the application ID.  The application ID is not checked immediately so the response reflects the most recent ID that was set.</p>
+
+<p>To obtain an application ID, visit newaer.com and login to the developer portal.  You will need your application&rsquo;s bundle identifier (ex: &ldquo;com.newaer.newaer-sdk-example&rdquo;) to create an application ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLogLevel:classes:logger:" title="setLogLevel:classes:logger:"></a>
+	<h3 class="subsubtitle method-title">setLogLevel:classes:logger:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set logging level for the SDK and provide a callback function to receive log messages NALOGLEVEL_DEBUG is only available in debug builds of the SDK.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setLogLevel:(NALogLevel)<em>level</em> classes:(NSArray *)<em>classes</em> logger:(void ( ^ ) ( NALogLevel level , NSString *message ))<em>logger</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>level</em></dt>
+			<dd><p>Indicate what level of activity to log.  Messages lower than this level will not be output.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>classes</em></dt>
+			<dd><p>An NSArray of NSString objects with the class names to output log messages for.  Use nil to display all classes.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>logger</em></dt>
+			<dd><p>A block that will be called each time a log message is available</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+  NALOGLEVEL_DEBUG = 0,
+  NALOGLEVEL_INFO = 1,
+  NALOGLEVEL_ERROR = 2
+} NALogLevel;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedNAPlatform" title="sharedNAPlatform"></a>
+	<h3 class="subsubtitle method-title">sharedNAPlatform</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>NAPlatform is a singleton and this is the only way to access the instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NAPlatform *)sharedNAPlatform</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getMyDeviceId" title="getMyDeviceId"></a>
+	<h3 class="subsubtitle method-title">getMyDeviceId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the deviceId for this device for the corresponding NADeviceType</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getMyDeviceId</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A deviceId string that can be used to uniquely identify your application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerBeaconIds:" title="registerBeaconIds:"></a>
+	<h3 class="subsubtitle method-title">registerBeaconIds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register iBeacon IDs that this application is compatible with. Register additional iBeacon IDs before you begin scanning to ensure that you will detect devices with those IDs.  If you only need to scan for devices matching your registered application ID, you don&rsquo;t need to call this function.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)registerBeaconIds:(NSArray *)<em>beaconIds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconIds</em></dt>
+			<dd><p>An NSArray containing beaconIds to register, For example: @[ @&ldquo;ac3bd3f7-7d1d-4132-94f2-f9ef0594eeb5&rdquo;, &hellip;]</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerFriendApplicationIds:" title="registerFriendApplicationIds:"></a>
+	<h3 class="subsubtitle method-title">registerFriendApplicationIds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register additional application IDs that this application is compatible with.  Some features of the SDK use the application ID to scan for other devices and services.  Register additional application IDs before you begin scanning to ensure that you will detect devices advertising with those IDs.  If you only need to scan for devices matching your registered application ID, you don&rsquo;t need to call this function.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)registerFriendApplicationIds:(NSArray *)<em>applicationIds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>applicationIds</em></dt>
+			<dd><p>An NSArray containing applicationIds to register, For example: @[ @&ldquo;ac3bd3f7-7d1d-4132-94f2-f9ef0594eeb5&rdquo;,@&ldquo;b97eb066-8f89-497d-b6f4-a1d11e48a383&rdquo;, &hellip;]</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/releaseDevice:" title="releaseDevice:"></a>
+	<h3 class="subsubtitle method-title">releaseDevice:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Releases a device identified by deviceId from the scanning cache.  Use this to get new peer info on the next scan.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)releaseDevice:(NSString *)<em>deviceId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceId</em></dt>
+			<dd><p>Which device ID to send the message to.  This value is typically obtained from an <a href="../Classes/NADevice.html">NADevice</a> object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessage:to:" title="sendMessage:to:"></a>
+	<h3 class="subsubtitle method-title">sendMessage:to:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Queues a message to be sent to a device ID.  The device ID need not be visible currently and may come into range in the future.  The message send request does not timeout and only one message may be queued at a time.  Calling this method a second time overwrites the first message.  Only peer devices of scan type NASCAN_NEWAER can receive messages. When you stop scanning, all queued messages are discarded.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendMessage:(NAMessage *)<em>message</em> to:(NSString *)<em>deviceId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message to send to the device.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceId</em></dt>
+			<dd><p>Which device ID to send the message to.  This value is typically obtained from an <a href="../Classes/NADevice.html">NADevice</a> object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidSendMessageToDevice:withStatus:">[NAPlatformDelegate platformDidSendMessageToDevice:withStatus:]</a> <a href="#//api/name/delegate">delegate</a> to be informed of message status.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startAdvertisingWithDeviceTypes:name:" title="startAdvertisingWithDeviceTypes:name:"></a>
+	<h3 class="subsubtitle method-title">startAdvertisingWithDeviceTypes:name:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start advertising for the specified device types.  The only scan type that currently supports advertising is NASCAN_NEWAER.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startAdvertisingWithDeviceTypes:(NSArray *)<em>deviceTypes</em> name:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceTypes</em></dt>
+			<dd><p>Which device types to enable advertising for.   Pass an NSArray of NSNumber objects.  Each NSNumber object should take the value of one of the NADeviceType eunmerated values.  Pass nil to start advertising on all available device types.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>A name that will be used when advertising.  If nil, the current operating system provided device name is used.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformAdvertiseFailed:">[NAPlatformDelegate platformAdvertiseFailed:]</a> <a href="#//api/name/delegate">delegate</a> will be called if there was a problem starting advertising for any device type.</p>
+
+<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidStartAdvertise:">[NAPlatformDelegate platformDidStartAdvertise:]</a> <a href="#//api/name/delegate">delegate</a> will be called if the advertising was started successfully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startScanWithDeviceTypes:" title="startScanWithDeviceTypes:"></a>
+	<h3 class="subsubtitle method-title">startScanWithDeviceTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts scanning for a specific scan family.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startScanWithDeviceTypes:(NSArray *)<em>deviceTypes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceTypes</em></dt>
+			<dd><p>Which device types to enable scanning for.  Pass an NSArray of NSNumber objects.  Each NSNumber object should take the value of one of the NADeviceType eunmerated values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformScanFailed:status:">[NAPlatformDelegate platformScanFailed:status:]</a> <a href="#//api/name/delegate">delegate</a> will be called if there was a problem starting scanning for any device type.</p>
+
+<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidStartScan:">[NAPlatformDelegate platformDidStartScan:]</a> <a href="#//api/name/delegate">delegate</a> will be called if the scan was started successfully.</p>
+
+<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidCompleteOneScan:">[NAPlatformDelegate platformDidCompleteOneScan:]</a> <a href="#//api/name/delegate">delegate</a> will be called each time a round of scanning completes.  Use this message to determine when to stop scanning or when to send results to another module for processing.</p>
+
+<p>Once the scan has started, the <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidFindDevice:">[NAPlatformDelegate platformDidFindDevice:]</a> and <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidLoseDevice:">[NAPlatformDelegate platformDidLoseDevice:]</a> delegates will be called each time a device is found or lost.</p>
+
+<p>(iOS Only) Scanning is only intended to be used while the application is in the foreground.  If the application is in the background or the device is locked, certain types of scans may be disabled or have degraded performance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAdvertisingWithDeviceTypes:" title="stopAdvertisingWithDeviceTypes:"></a>
+	<h3 class="subsubtitle method-title">stopAdvertisingWithDeviceTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops advertising for specific device types.
+The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidStopAdvertise:">[NAPlatformDelegate platformDidStopAdvertise:]</a> <a href="#//api/name/delegate">delegate</a> will be called if the advertise was stopped successfully.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopAdvertisingWithDeviceTypes:(NSArray *)<em>deviceTypes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceTypes</em></dt>
+			<dd><p>Which scan types to stop advertising for.   Pass an NSArray of NSNumber objects.  Each NSNumber object should take the value of one of the NADeviceType eunmerated values.  Pass nil for all device types.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopScanWithDeviceTypes:" title="stopScanWithDeviceTypes:"></a>
+	<h3 class="subsubtitle method-title">stopScanWithDeviceTypes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops scanning for specific device types.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopScanWithDeviceTypes:(NSArray *)<em>deviceTypes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>deviceTypes</em></dt>
+			<dd><p>Which device types to disable scanning for. Pass an NSArray of NSNumber objects.  Each NSNumber object should take the value of one of the NADeviceType eunmerated values.  Pass nil to stop scanning for all device types.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Protocols/NAPlatformDelegate.html#//api/name/platformDidStopScan:">[NAPlatformDelegate platformDidStopScan:]</a> <a href="#//api/name/delegate">delegate</a> will be called when the scan was stopped successfully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 NewAer. All rights reserved. (Last updated: 2014-08-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

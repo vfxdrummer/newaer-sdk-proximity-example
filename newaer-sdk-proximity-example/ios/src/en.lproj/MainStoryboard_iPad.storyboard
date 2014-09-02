@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6EU-kl-AFO"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKl-k0-LT9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5" userLabel="View - Big Box">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tU-1J-2oh" userLabel="View - Bottom Box">
+                                <rect key="frame" x="0.0" y="817" width="768" height="207"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjh-M4-zdR">
+                                        <rect key="frame" x="306" y="80" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeAdvertiseNewAerSwitch" destination="2" eventType="valueChanged" id="i0K-Ca-ED4"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kE0-D3-XYM">
+                                        <rect key="frame" x="225" y="80" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeNewAerSwitch" destination="2" eventType="valueChanged" id="8Rh-eZ-9am"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dnC-XB-2qp">
+                                        <rect key="frame" x="225" y="22" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeWearableSwitch" destination="2" eventType="valueChanged" id="nmv-E8-Txt"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="NewAer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jo-eg-hJS">
+                                        <rect key="frame" x="8" y="85" width="185" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBi-GS-X0X">
+                                        <rect key="frame" x="225" y="139" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeBeaconSwitch" destination="2" eventType="valueChanged" id="c8R-tu-ReX"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Beacons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-9i-R02">
+                                        <rect key="frame" x="8" y="144" width="185" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Wearable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-PG-Lau">
+                                        <rect key="frame" x="121" y="27" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Scan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-hI-gQp">
+                                        <rect key="frame" x="230" y="0.0" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Advertise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fue-iF-Szb">
+                                        <rect key="frame" x="306" y="0.0" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-q8-fQZ">
+                                        <rect key="frame" x="538" y="0.0" width="102" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="o62-cC-sWH"/>
+                                        </constraints>
+                                        <state key="normal" title="Send Message">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickSendMessage:" destination="2" eventType="touchUpInside" id="2e5-YH-9sq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Fue-iF-Szb" firstAttribute="top" secondItem="8tU-1J-2oh" secondAttribute="top" id="A41-ol-gcf"/>
+                                    <constraint firstItem="Fue-iF-Szb" firstAttribute="centerX" secondItem="Gjh-M4-zdR" secondAttribute="centerX" constant="11.5" id="DNo-zA-J60"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="207" id="Dy3-tn-ba6"/>
+                                    <constraint firstItem="qb4-hI-gQp" firstAttribute="top" secondItem="8tU-1J-2oh" secondAttribute="top" id="FLb-fv-Hho"/>
+                                    <constraint firstItem="Gjh-M4-zdR" firstAttribute="leading" secondItem="8tU-1J-2oh" secondAttribute="leading" constant="306" id="ct5-1N-5G1"/>
+                                    <constraint firstAttribute="height" constant="207" id="nAQ-H7-l0k"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9m-Xz-Fiq" userLabel="View - Top Box">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="814"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RxB-Ps-Opt">
+                                        <rect key="frame" x="388" y="20" width="360" height="794"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="2" id="Xyn-FF-pNA"/>
+                                            <outlet property="delegate" destination="2" id="H0V-YI-nfP"/>
+                                        </connections>
+                                    </tableView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCr-Yv-fde">
+                                        <rect key="frame" x="20" y="19" width="360" height="794"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">NewAerExample
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2" id="2Jl-HU-4Xj"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="RxB-Ps-Opt" firstAttribute="bottom" secondItem="A9m-Xz-Fiq" secondAttribute="bottom" id="4U9-Cx-tXI"/>
+                                    <constraint firstItem="RxB-Ps-Opt" firstAttribute="leading" secondItem="OCr-Yv-fde" secondAttribute="trailing" constant="8" symbolic="YES" id="4lt-2H-Ee4"/>
+                                    <constraint firstItem="OCr-Yv-fde" firstAttribute="bottom" secondItem="A9m-Xz-Fiq" secondAttribute="bottom" constant="-1" id="7CA-Fe-jba"/>
+                                    <constraint firstAttribute="trailing" secondItem="RxB-Ps-Opt" secondAttribute="trailing" constant="20" symbolic="YES" id="ZG2-I4-XQc"/>
+                                    <constraint firstItem="RxB-Ps-Opt" firstAttribute="width" secondItem="OCr-Yv-fde" secondAttribute="width" id="hCQ-lz-TgV"/>
+                                    <constraint firstItem="RxB-Ps-Opt" firstAttribute="top" secondItem="A9m-Xz-Fiq" secondAttribute="top" constant="20" symbolic="YES" id="oUu-lS-YJV"/>
+                                    <constraint firstItem="OCr-Yv-fde" firstAttribute="top" secondItem="A9m-Xz-Fiq" secondAttribute="top" constant="19" id="pld-io-qSs"/>
+                                    <constraint firstItem="OCr-Yv-fde" firstAttribute="leading" secondItem="A9m-Xz-Fiq" secondAttribute="leading" constant="20" symbolic="YES" id="zAD-wK-5J4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A9m-Xz-Fiq" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="5fe-Bj-GHh"/>
+                            <constraint firstItem="A9m-Xz-Fiq" firstAttribute="top" secondItem="5" secondAttribute="top" id="U9X-m4-ygI"/>
+                            <constraint firstItem="8tU-1J-2oh" firstAttribute="top" secondItem="A9m-Xz-Fiq" secondAttribute="bottom" constant="3" id="cmi-zd-6RQ"/>
+                            <constraint firstItem="A9m-Xz-Fiq" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="fh1-dB-Bsf"/>
+                            <constraint firstItem="8tU-1J-2oh" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="jT6-dE-Ovm"/>
+                            <constraint firstItem="8tU-1J-2oh" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" id="kR4-6Z-RbH"/>
+                            <constraint firstItem="8tU-1J-2oh" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="y4s-0e-sLd"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="advertiseNewAerSwitch" destination="Gjh-M4-zdR" id="odf-Cd-OIt"/>
+                        <outlet property="devicesTableView" destination="RxB-Ps-Opt" id="Mpv-Bg-jl7"/>
+                        <outlet property="scanBeaconSwitch" destination="uBi-GS-X0X" id="30I-GN-ZMv"/>
+                        <outlet property="scanNewAerSwitch" destination="kE0-D3-XYM" id="TKw-Hk-L5n"/>
+                        <outlet property="scanWearableSwitch" destination="dnC-XB-2qp" id="Qcf-BF-oDF"/>
+                        <outlet property="sendButton" destination="oKF-q8-fQZ" id="gym-Wr-eQn"/>
+                        <outlet property="textView" destination="OCr-Yv-fde" id="Gvq-ZD-jmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

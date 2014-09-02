@@ -1,0 +1,1081 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NAPlatformDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">NewAer SDK </a></h1>
+				<a id="developerHome" href="../index.html">NewAer</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NAPlatformDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/platformAdvertiseFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- platformAdvertiseFailed:</option>
+	
+	<option value="//api/name/platformDidCompleteOneScan:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidCompleteOneScan:</option>
+	
+	<option value="//api/name/platformDidFindDevice:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidFindDevice:</option>
+	
+	<option value="//api/name/platformDidLoseDevice:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidLoseDevice:</option>
+	
+	<option value="//api/name/platformDidReceiveMessage:from:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidReceiveMessage:from:</option>
+	
+	<option value="//api/name/platformDidRequestDeviceInfoFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidRequestDeviceInfoFrom:</option>
+	
+	<option value="//api/name/platformDidSendMessageToDevice:withStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidSendMessageToDevice:withStatus:</option>
+	
+	<option value="//api/name/platformDidStartAdvertise:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidStartAdvertise:</option>
+	
+	<option value="//api/name/platformDidStartScan:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidStartScan:</option>
+	
+	<option value="//api/name/platformDidStopAdvertise:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidStopAdvertise:</option>
+	
+	<option value="//api/name/platformDidStopScan:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidStopScan:</option>
+	
+	<option value="//api/name/platformDidUpdateDevice:">&nbsp;&nbsp;&nbsp;&nbsp;- platformDidUpdateDevice:</option>
+	
+	<option value="//api/name/platformInitComplete">&nbsp;&nbsp;&nbsp;&nbsp;- platformInitComplete</option>
+	
+	<option value="//api/name/registrationFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- registrationFailed:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformAdvertiseFailed:">platformAdvertiseFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidCompleteOneScan:">platformDidCompleteOneScan:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidFindDevice:">platformDidFindDevice:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidLoseDevice:">platformDidLoseDevice:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidReceiveMessage:from:">platformDidReceiveMessage:from:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidRequestDeviceInfoFrom:">platformDidRequestDeviceInfoFrom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidSendMessageToDevice:withStatus:">platformDidSendMessageToDevice:withStatus:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidStartAdvertise:">platformDidStartAdvertise:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidStartScan:">platformDidStartScan:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidStopAdvertise:">platformDidStopAdvertise:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidStopScan:">platformDidStopScan:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformDidUpdateDevice:">platformDidUpdateDevice:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/platformInitComplete">platformInitComplete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registrationFailed:">registrationFailed:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NAPlatformDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NAPlatformDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NAPlatform.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>NAPlatformDelegate is the delegate protocol for the NewAer Proximity Platform.  All delegate calls are dispatched asynchronously on a private queue that may not be on the main thread.  Take care when updating UI elements based on delegate calls.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registrationFailed:">&ndash;&nbsp;registrationFailed:</a></code>
+		<span class="tooltip"><p>Called when an event associated with application registration occurs.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidFindDevice:">&ndash;&nbsp;platformDidFindDevice:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> discovers a new device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidLoseDevice:">&ndash;&nbsp;platformDidLoseDevice:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> loses contact with a previously discovered device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidUpdateDevice:">&ndash;&nbsp;platformDidUpdateDevice:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> updates the status of a previously discovered device.  This could include updates to device health, signal strength, name or when it was last seen.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidReceiveMessage:from:">&ndash;&nbsp;platformDidReceiveMessage:from:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> receives a message from another device.  You will only be able to receive a message from another device if you have enabled advertising.  Not all device types can receive messages.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidSendMessageToDevice:withStatus:">&ndash;&nbsp;platformDidSendMessageToDevice:withStatus:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> is finished sending a message to another device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidRequestDeviceInfoFrom:">&ndash;&nbsp;platformDidRequestDeviceInfoFrom:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> needs user information to send to a remote peer.  If this delegate is not implemented, nothing will be returned to the peer in the user info area.  User info is restricted to 255 bytes of data.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidStartScan:">&ndash;&nbsp;platformDidStartScan:</a></code>
+		<span class="tooltip"><p>Called when a scan has successfully started for a scan type.  This is called once for each device type in response to a startScanWithDeviceTypes call.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidStopScan:">&ndash;&nbsp;platformDidStopScan:</a></code>
+		<span class="tooltip"><p>Called when a scan has successfully stopped for a device type.  This is called once for each device type in response to a stopScanWithDeviceTypes call.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidCompleteOneScan:">&ndash;&nbsp;platformDidCompleteOneScan:</a></code>
+		<span class="tooltip"><p>Called when one scan cycle has completed for a device type.  Some device types do not return results immediately.  This delegate is called after all didFindDevice delegates have been called.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformAdvertiseFailed:">&ndash;&nbsp;platformAdvertiseFailed:</a></code>
+		<span class="tooltip"><p>Called when advertising cannot be started</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidStartAdvertise:">&ndash;&nbsp;platformDidStartAdvertise:</a></code>
+		<span class="tooltip"><p>Called when advertising has successfully started for a device type.  This is called once for each device type in response to a startAdvertisingWithDeviceTypes call.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformDidStopAdvertise:">&ndash;&nbsp;platformDidStopAdvertise:</a></code>
+		<span class="tooltip"><p>Called when advertising has successfully stopped for a device type.  This is called once for each device type in response to a stopAdvertisingWithDeviceTypes call.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/platformInitComplete">&ndash;&nbsp;platformInitComplete</a></code>
+		<span class="tooltip"><p>Called when the platform has completed initialization.  Waiting for this delegate to fire ensures that all initialization is complete.  You can safely call scan and advertise functions after this delegate fires.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/platformAdvertiseFailed:" title="platformAdvertiseFailed:"></a>
+	<h3 class="subsubtitle method-title">platformAdvertiseFailed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when advertising cannot be started</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformAdvertiseFailed:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The device type that advertising failed for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This delegate may be called any time after the advertising has started, such as when the user turns off a radio or puts their device in airplane mode.</p>
+
+<p>The types of failures that can occur during advertising are enumerated in NADeviceTypeStatus.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidCompleteOneScan:" title="platformDidCompleteOneScan:"></a>
+	<h3 class="subsubtitle method-title">platformDidCompleteOneScan:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when one scan cycle has completed for a device type.  Some device types do not return results immediately.  This delegate is called after all didFindDevice delegates have been called.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidCompleteOneScan:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The device type that scanning stopped for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidFindDevice:" title="platformDidFindDevice:"></a>
+	<h3 class="subsubtitle method-title">platformDidFindDevice:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> discovers a new device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidFindDevice:(NADevice *)<em>device</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The <a href="../Classes/NADevice.html">NADevice</a> reference that was found</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidLoseDevice:" title="platformDidLoseDevice:"></a>
+	<h3 class="subsubtitle method-title">platformDidLoseDevice:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> loses contact with a previously discovered device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidLoseDevice:(NADevice *)<em>device</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The <a href="../Classes/NADevice.html">NADevice</a> reference that was lost</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidReceiveMessage:from:" title="platformDidReceiveMessage:from:"></a>
+	<h3 class="subsubtitle method-title">platformDidReceiveMessage:from:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> receives a message from another device.  You will only be able to receive a message from another device if you have enabled advertising.  Not all device types can receive messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidReceiveMessage:(NAMessage *)<em>message</em> from:(NADevice *)<em>device</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message that was received by this <a href="../Classes/NADevice.html">NADevice</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>Which device sent the message</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidRequestDeviceInfoFrom:" title="platformDidRequestDeviceInfoFrom:"></a>
+	<h3 class="subsubtitle method-title">platformDidRequestDeviceInfoFrom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> needs user information to send to a remote peer.  If this delegate is not implemented, nothing will be returned to the peer in the user info area.  User info is restricted to 255 bytes of data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)platformDidRequestDeviceInfoFrom:(NADevice *)<em>device</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The device that is requesting info</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The NSData blob that holds the desired user info.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidSendMessageToDevice:withStatus:" title="platformDidSendMessageToDevice:withStatus:"></a>
+	<h3 class="subsubtitle method-title">platformDidSendMessageToDevice:withStatus:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> is finished sending a message to another device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidSendMessageToDevice:(NADevice *)<em>device</em> withStatus:(NAMessageStatus)<em>status</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The device that the message was sent to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>status</em></dt>
+			<dd><p>The status of the message sent to the other device: success, fail, other.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidStartAdvertise:" title="platformDidStartAdvertise:"></a>
+	<h3 class="subsubtitle method-title">platformDidStartAdvertise:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when advertising has successfully started for a device type.  This is called once for each device type in response to a startAdvertisingWithDeviceTypes call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidStartAdvertise:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The device type that advertising started for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidStartScan:" title="platformDidStartScan:"></a>
+	<h3 class="subsubtitle method-title">platformDidStartScan:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a scan has successfully started for a scan type.  This is called once for each device type in response to a startScanWithDeviceTypes call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidStartScan:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The scan type that scanning started for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidStopAdvertise:" title="platformDidStopAdvertise:"></a>
+	<h3 class="subsubtitle method-title">platformDidStopAdvertise:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when advertising has successfully stopped for a device type.  This is called once for each device type in response to a stopAdvertisingWithDeviceTypes call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidStopAdvertise:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The device type that advertising stopped for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidStopScan:" title="platformDidStopScan:"></a>
+	<h3 class="subsubtitle method-title">platformDidStopScan:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a scan has successfully stopped for a device type.  This is called once for each device type in response to a stopScanWithDeviceTypes call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidStopScan:(NADeviceType)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The device type that scanning stopped for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformDidUpdateDevice:" title="platformDidUpdateDevice:"></a>
+	<h3 class="subsubtitle method-title">platformDidUpdateDevice:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/NAPlatform.html">NAPlatform</a> updates the status of a previously discovered device.  This could include updates to device health, signal strength, name or when it was last seen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformDidUpdateDevice:(NADevice *)<em>device</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>device</em></dt>
+			<dd><p>The <a href="../Classes/NADevice.html">NADevice</a> reference whose health was changed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/platformInitComplete" title="platformInitComplete"></a>
+	<h3 class="subsubtitle method-title">platformInitComplete</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the platform has completed initialization.  Waiting for this delegate to fire ensures that all initialization is complete.  You can safely call scan and advertise functions after this delegate fires.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)platformInitComplete</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registrationFailed:" title="registrationFailed:"></a>
+	<h3 class="subsubtitle method-title">registrationFailed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an event associated with application registration occurs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registrationFailed:(NARegistrationFailureType)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error that caused registration to fail.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This delegate may be called any time after the platform is initialized if there is an error.  Due to network connectivity, it may not be immediate.</p>
+
+<p>The types of failures that can occur during application registration are:</p>
+
+<pre><code> typedef enum
+ {
+   NAPLATFORM_DEVELOPER_KEY_INVALID = 0,         // Developer key is invalid for SDK version and bundle ID
+   NAPLATFORM_INTERNET_UNAVAILABLE = 1,          // Internet connectivity has been unavailable and developer key check cannot complete
+   NAPLATFORM_SDK_VERSION_UPGRADE_REQUIRED = 2,  // This SDK version is obsolete and must be updated
+   NAPLATFORM_FRIEND_KEY_INVALID = 3,            // One of the friend application IDs that was specified is invalid or not authorized
+ } NARegistrationFailureType;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NAPlatform.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 NewAer. All rights reserved. (Last updated: 2014-08-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

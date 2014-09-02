@@ -1,0 +1,124 @@
+# Welcome to the NewAer Proximity Platform SDK for Apple Devices
+
+This SDK allows developers to trigger application behaviors based upon a smartphone, tablet, laptop, or desktop machine having physical interactions with another device in the environment.  These devices can be detected without the need of a centralized server, and can be communicated with directly, peer-to-peer.
+
+For information on the NAPlatform, NADevice, and NAMessage classes which are exposed by this SDK, please see the [NewAer SDK Reference](../index.html).
+
+Use of this SDK is governed by [NewAer SDK License](LICENSE.html).
+
+## Scope
+
+This SDK is available for applications targeting iOS and OSX.  Due to the similarities of Cocoa implementations for these platforms, the NewAer Proximity Platform classes and function calls share a common footprint.
+
+Not all devices have the same hardware features and some of the functions from desktop frameworks are absent in mobile frameworks.  The documentation is written to describe the combined features across both platforms.  Differences are called out where necessary.
+
+## Device Types
+
+The SDK supports discovery of a range of devices.  The scanning interface groups these devices into three categories:
+
+NADeviceType        | Description                  | Radios                        | Examples
+--------------------|------------------------------|-------------------------------|----------
+NATYPE_NEWAER       | NewAer devices               | Bluetooth LE                  | Your application running on another mobile device
+NATYPE_WEARABLE     | Wearable Devices             | Bluetooth LE                  | FitBit Flex, Galaxy Gear, Heart Rate Monitor
+NATYPE_BEACON       | iBeacon                      | Bluetooth LE                  | An iBeacon configured with your App's UUID
+
+### Scanning Limitations
+
+On iOS, this SDK only supports scanning for devices when the application is running in the foreground.  If the application moves to the background, device observations will become unreliable.  You should issue a [NAPlatform stopScanWithDeviceTypes:] when your application goes to the background and a [NAPlatform startScanWithDeviceTypes:] when your application comes back to the foreground.
+
+The scanning engines in the SDK have different duty cycles.  A [NAPlatformDelegate platformDidCompleteOneScan:] delegate lets you know when a scan cycle has completed.  Depending on the scan family and characteristics of your radio environment, this delegate can be called immediately with no devices returned, after one device has been returned, or after a set of devices have been returned over a long time period.  This delegate can be used to indicate progress to the user.
+
+### Device info
+
+A detected device, service, or area is expressed as a NADevice instance.  NADevices can be enumerated based on the deviceId property.  Depending on the device type, the deviceId has different uniqueness characteristics. A deviceId can be unique to:
+
+* session: the deviceId reported by the SDK will not change during a scan session; different devices may observe different deviceIds
+* global: the deviceId reported by the SDK will not change during a scan session and different devices will observe the same deviceId
+
+NADeviceType        | Uniqueness        | Description
+--------------------|-------------------|-----------------------------------------------------------
+NATYPE_NEWAER       | global            | Connectable Bluetooth LE device with NewAer SDK
+NATYPE_WEARABLE     | session           | Wearable Bluetooth LE device, like a fitness tracker
+NATYPE_BEACON       | global            | Configure the major and minor numbers on the iBeacon to obtain a unique identifier
+
+The scanner will report one or more of the following events for each device:
+
+* didFindDevice: this is the first observation of this device during the current run of the scanner.  Calling [NAPlatform stopScanWithDeviceTypes:] will reset the list of devices.
+* didUpdateDevice: a previously detected device has been observed and may have updated information.  The updated information could include: signal strength, user info, last seen time, local/server observation, or device name.  When a scanner includes raw signal strength information, these updates are limited to 2 per second.
+* didLoseDevice: the device was determined to have gone out of range during the current run of the scanner.  Calling [NAPlatform stopScanWithDeviceTypes:] will cause all previously found devices to issue a didLoseDevice event.  Devices can go out of range for a variety of reasons: radio interface disabled, loss of network connectivity, signal too weak, or device has not been seen recently.
+
+Devices with the NATYPE_NEWAER scan type have an additional property available called [NADevice deviceInfo].  This user info blob is empty unless set by the SDK developer.  The blob is exchanged during the discovery phase and is updated just prior to each didFindDevice event.  This allows the app developer to send and receive a small payload to every discovered device without having to wait for it to be reported and then having to queue and respond to messages.  
+
+The optional [NAPlatformDelegate platformDidRequestDeviceInfoFrom:] delegate is called when a remote device has begun its discovery and is requesting a user info blob.  The function should return as quickly as possible to ensure the remote device discovery phase is not unnecessarily long.  Device info can be a maximum of 90 bytes.  When this delegate is called, the remote peer device info is not yet known.  It is not possible to send a different payload depending on the remote device ID.  You should use a NAMessage instead.
+
+
+## Messaging
+
+The SDK supports direct communication with peers devices that are discovered with the NATYPE_NEWAER scan type. To receive a message, a device must have issued a [NAPlatform startAdvertisingWithDeviceTypes:name:] call with NATYPE_NEWAER type.  To send a message, a device must have issued a [NAPlatform startScanWithDeviceTypes:] call with the NATYPE_NEWAER type.  Messages can be sent and received until the corresponding stopScanWithDeviceTypes or stopAdvertisingWithDeviceTypes call is made.
+
+Messages are sent in the clear with no guarantee of delivery.  NewAer SDK devices do not need to authenticate with each other in order to send messages.  The SDK user will need to create authentication, encryption, and reliability mechanisms if they are needed for a particular application.
+
+## Dependencies
+
+All applications created with the NewAer Proximity Platform SDK must obtain an application ID.  You can obtain an application ID by visiting the NewAer Developer Portal and registering your bundle ID.  The application ID is used for license validation and for enabling the discovery of devices running your application(s).
+
+An application running on iOS that would like to see an application running on OSX needs to be aware of two application IDs: its own, and that of its peer.  You can monitor as many application IDs as you would like as long as they are all created by the same developer account.
+
+### iOS Dependencies
+
+This SDK requires your application to target devices running iOS 6.0 or above.  It requires your application to link with the following frameworks:
+
+* CoreLocation
+* CoreBluetooth
+* SystemConfiguration
+* MobileCoreServices
+* CFNetwork
+* Security
+* UIKit
+* Foundation
+
+### OSX Dependencies
+
+This SDK requires your application to target devices running OSX 10.8 or above.  It requires your application to link with the following frameworks:
+
+* IOBluetooth
+* CoreWLAN
+* Security
+* SystemConfiguration
+* CoreServices
+
+## Example
+
+This SDK includes a sample application called newaer-sdk-proximity-example.  This application demonstrates proper initialization of the SDK, starting and stopping of scans, implementation of find and lose device delegates, the send message function, and receive message delegates.
+
+Please refer to the source code and the [NewAer SDK Reference](../index.html) for more details.
+
+## Integrate with your own app
+
+1. Copy newaer-sdk-proximity/ios/build/Release into your project
+2. Add libnewaer-sdk-proximity.a to your build phases/link binary with libraries
+3. Add to the library search path in build settings:
+        ${PROJECT_DIR}/newaer-sdk-proximity/ios/build/Release
+4. Add to the user header search path in build settings:
+        ${PROJECT_DIR}/newaer-sdk-proximity/ios/build/Release/include
+
+5. Add supporting frameworks: CoreBluetooth, MobileCoreServices, SystemConfiguration, CoreLocation
+6. Add \<NAPlatformDelegate\> to your View Controller
+7. Add some delegates:
+        - (void)registrationFailed:(NARegistrationFailureType)error
+        {
+            NSLog(@"registrationFailed: %d",error);
+        }
+
+        - (void)platformDidFindDevice:(NADevice *)device 
+        {
+            NSLog(@"didFindDevice: %@",device);
+        }
+8. Initialize the NAPlatform with your application ID (obtain from newaer.com Dev Portal):
+        [NAPlatform initializeWithApplicationId:@"2923107f-68a4-40cf-9585-d2da48575933" delegate:self];
+9. StartFrom scanning
+        [[NAPlatform sharedNAPlatform] startScanWithDeviceTypes:nil];
+    
+
+
+

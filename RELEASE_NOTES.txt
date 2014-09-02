@@ -1,0 +1,62 @@
+Version 4.0
+===========
+* NASCAN_NEWAER scan type is now cross-platform.  This scan type can detect other iOS devices, capable Android devices, and Windows
+devices using the NewAer Dongle.  Devices can also peer-to-peer message each other cross-platform.
+
+* The SDK can scan for iBeacons.  Configure the iBeacon with the UUID you obtained for your application on the NewAer Developer Portal.  Scan using NASCAN_BEACON.
+
+Version 3.0
+===========
+* The scanning interface now uses "scan types" to remove the need for the developer to worry about which device types need to be used with which combination of hardware.  Scan types include: NASCAN_GENERIC, NASCAN_NEWAER, NASCAN_SERVICES, NASCAN_AREA.
+
+* A new type of device has been added: NewAer Area.  A NewAer Area is a dynamic proximity pointer that is created by combining the observations of the local device with other devices.  Areas are different from GPS coordinates in that they can shift over time as devices appear and disappear.  Think of a NewAer Area as a 300-1000 foot radius region that is shared by devices that can see each other directly.
+
+* The scanner now combines scan reports from the local device with scan reports from other devices nearby.  This allows a local device to see peer devices that may not be directly visible.  For example, iOS devices can now see and be seen by Android devices.
+ 
+Version 2.0
+===========
+* Peer to peer messaging support for BTLE, Bluetooth Bonjour, and Wifi Bonjour device types.  New: sendMessage, didSendMessageWitStatus, didReceiveMessage.  NAMessage object is used to transport message.
+
+* Added support for User Info to NADevice.  User Info is a 90-byte maximum data area that is communicated to the remote peer at device discovery.
+
+* Added support for background scanning of BTLE and Bonjour device types on iOS.  Scanning in the background only reports didFindDevice events; didLoseDevice events are held until the application comes back to the foreground.
+
+* didStartScan, didStopScan, scanFailed delegates
+
+* didStartAdvertise, didStopAdvertise, advertiseFailed delegates
+
+* getMyDeviceIdWithDeviceType to determine device's unique identifier
+
+* getSupportedDeviceTypes to determine which scan types are possible on the current hardware
+
+* registerFriendApplicationId to allow scanning for applications on other platforms: iOS can now detect devices using an OS X application Id; also multiple apps from the same developer can now detect each other
+
+
+Version 1.2
+===========
+
+* Mac OSX SDK released
+
+* Adds TYPE_BLUETOOTHSTANDARD device type (OS X only)
+
+Version 1.1
+===========
+
+* Bluetooth LE devices now have signal strength measurements.  Use device.signalStrength property to access.  
+
+* You can now enable and disable scanning or advertising by device family without interrupting existing scans.  New methods are startScanWithDeviceTypes, stopScanWithDeviceTypes, startAdvertisingWithDeviceTypes, stopAdvertisingWithDeviceTypes
+
+* Scanning and advertising is optimized to minimize battery drain.
+
+* Added new registrationFailed delegate to provide more information to the developer when application registration fails.
+
+* DeviceIds are unique.  Wifi Access points use the BSSID of the access point, non-NewAer devices on Bluetooth LE use the device's UUID, non-NewAer devices on Wifi use the Bonjour service name and protocol, and NewAer devices use a NewAer-specific UUID.
+
+* Scanning now reports new devices immediately.  Existing devices are filtered before removal to prevent flapping.
+
+* Various Bug Fixes.
+
+Version 1.0
+===========
+
+* Initial SDK Release
